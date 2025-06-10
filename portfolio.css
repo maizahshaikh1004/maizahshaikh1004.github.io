@@ -1,0 +1,274 @@
+/* 1. Global/Reset & Fonts */
+html {
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Body & Layout */
+body.cyber-body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 60px;
+}
+
+/* 3. Navbar */
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #00ffe1 !important; /* cyan */
+    font-weight: 600;
+}
+
+/* 4. Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 50px;
+    /* background: linear-gradient(to right, #667eea, #764ba2);
+    color: #00fff7; */
+}
+.hero-section.card {
+    border-radius: 1.5rem !important;
+}
+.hero-section h3 {
+    color: #00ffe1; /* cyan */
+    font-weight: 600;
+}
+/* 
+.hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+} */
+
+/* 5. About Section */
+.about-img {
+    /* width: 200px;
+    height: 200px; */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    border: 4px solid #58a6ff;
+    box-shadow: 0 4px 15px rgba(88, 166, 255, 0.5);
+}
+.about-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #212529;
+}
+.about-content h2, #projects h2, .contact h2 {
+    color: #00ffe1; /* cyan */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+h5 {
+    color: #111;
+}
+.aboutbtn a {
+    background: #764ba2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.aboutbtn a:hover {
+    background-color: #00ffe1;
+    color: #000;
+}
+.mx-auto.bg-light.text-dark.shadow.rounded-4.p-5 {
+    border-radius: 10px;
+}
+.about .container .mx-auto {
+    max-width: 1000px !important;
+}
+.about-content.shadow .hero-section.card {
+    box-shadow: 0 .5rem 1rem rgb(0 0 0 / 59%) !important;
+}
+
+/* 6. Skills Section */
+.skills-section {
+    width: 90%;
+    /* min-width: 700px; */
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+.skills-section h2 {
+    text-align: center;
+    color: #00ffe1; /* cyan */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.skills-container {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgba(255,255,255,0.06);
+    border: 2px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+.skills {
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.details span {
+    color: #060855;
+    font-weight: 900;
+}
+.bar {
+    position: relative;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 7px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+.bar div {
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #badefc;
+    border: 1px solid #1c97fc;
+    box-shadow: 0 0 5px rgba(28,151,252,0.6);
+}
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #e9ecef; /* light grey for unfilled */
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.progress {
+    height: 100%;
+    background-color: #007bff; /* blue for filled part */
+    border-radius: 6px;
+    transition: width 0.6s ease;
+}
+/* Progress Animations */
+#html-bar { animation: html-fill 2s forwards; }
+#css-bar { animation: css-fill 2s forwards; }
+#js-bar { animation: js-fill 2s forwards; }
+#java-bar { animation: java-fill 2s forwards; }
+#py-bar { animation: py-fill 2s forwards; }
+#cpp-bar { animation: cpp-fill 2s forwards; }
+#mysql-bar { animation: mysql-fill 2s forwards; }
+#mongo-bar { animation: mongo-fill 2s forwards; }
+#can-bar { animation: can-fill 2s forwards; }
+@keyframes html-fill { 100% { width: 90%; } }
+@keyframes css-fill { 100% { width: 85%; } }
+@keyframes js-fill { 100% { width: 70%; } }
+@keyframes java-fill { 100% { width: 80%; } }
+@keyframes py-fill { 100% { width: 85%; } }
+@keyframes cpp-fill { 100% { width: 70%; } }
+@keyframes mysql-fill { 100% { width: 80%; } }
+@keyframes mongo-fill { 100% { width: 65%; } }
+@keyframes can-fill { 100% { width: 90%; } }
+
+/* 7. Projects Section */
+.project-card {
+    background-color: rgba(255,255,255,0.06);
+    border: 2px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+.project-card:hover {
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.2);
+}
+.project-card.btn {
+    margin-top: 10px;
+}
+
+/* 8. Terminal/Contact Section */
+.terminal {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    padding: 20px;
+    background-color: #262643e3;
+    box-shadow: 0 0 10px #000;
+    color: #00ffe1; /* cyan */
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+}
+.icon {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.line {
+    display: block;
+    margin-bottom: 10px;
+}
+.prompt::before {
+    content: 'maizah@portfolio:~$';
+    margin-right: 8px;
+    color: #00ffe1; /* cyan */
+}
+.blink {
+    animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #00ffe1;
+    color: #00ffe1;
+    width: 80%;
+    font-family: inherit;
+    font-size: 1em;
+}
+input:focus {
+    outline: none;
+}
+
+/* 9. Buttons & Utilities */
+.workbtn a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* .workbtn a:hover {
+    background: #ff6b6b;
+    color: white;
+} */
+
+/* 10. Responsive */
+@media (max-width: 768px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+    .hero-section {
+        padding: 30px;
+    }
+    .skills-section {
+        width: 95%;
+        min-width: unset;
+    }
+}
